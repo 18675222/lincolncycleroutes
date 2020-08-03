@@ -7,3 +7,39 @@ html, body #lincoln {
     width: 100vw;
 }
 
+/*key specific*/
+.key {
+    padding: 6px 8px;
+    font: 14px Arial, Helvetica, sans-serif;
+    background: #ddda96;
+    background: rgba(236, 236, 231, 0.801);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    line-height: 24px;
+    color: rgb(0, 0, 0);
+  }
+  .key h4 {
+    text-align: center;
+    font-size: 16px;
+    margin: 2px 12px 8px;
+    color: rgb(26, 25, 25);
+  }
+  
+  .key span {
+    position: relative;
+    bottom: 3px;
+  }
+  
+  .key i {
+    width: 18px;
+    height: 18px;
+    float: left;
+    margin: 0 8px 0 0;
+    opacity: 0.7;
+  }
+  
+  .key i.icon {
+    background-size: 18px;
+    background-color: rgba(255, 255, 255, 1);
+  }
+
