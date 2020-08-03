@@ -23,6 +23,21 @@
 
         }).addTo(lincolnMap);
 
+        /*Key for patht types*/
+        var key = L.control({ position: "bottomright" });
+        key.onAdd = function(lincolnMap) {
+        var div = L.DomUtil.create("div", "key");
+        div.innerHTML += "<h4>Key</h4>";
+        div.innerHTML += '<i style="background: darkgreen"></i><span>Off road cycle route</span><br>';
+        div.innerHTML += '<i style="background: teal"></i><span>Signed local route</span><br>';
+        div.innerHTML += '<i style="background: blue"></i><span>Cycle path Off-road</span><br>';
+        div.innerHTML += '<i style="background: purple"></i><span>Cycle path On-road</span><br>';
+        div.innerHTML += '<i style="background: brown"></i><span>Pedestrianised area</span><br>';
+        return div;
+        };
+
+        key.addTo(lincolnMap);
+
         var routes = {
             offRoad: {
                 paths: [
